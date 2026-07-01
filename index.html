@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skogskalkyl</title>
+
+    <meta name="description" content="Fältverktyg för skogsvårdsentreprenörer">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+
+</head>
+
+<body>
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+        <h1>🌲 Skogskalkyl</h1>
+    </header>
+
+    <!-- APP WRAPPER -->
+    <div class="app">
+
+        <!-- SIDEBAR -->
+        <nav id="sidebar">
+            <ul>
+                <li class="active" data-view="dashboard">Start</li>
+                <li data-view="dgv">DGV</li>
+                <li data-view="height">Höjd</li>
+                <li data-view="rojning">Röjning</li>
+                <li data-view="quote">Offert</li>
+            </ul>
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+            <section id="dashboard" class="view active">
+                <h2>Välkommen</h2>
+                <p>Välj en funktion i menyn.</p>
+            </section>
+
+            <section id="dgv" class="view">
+                <h2>DGV</h2>
+                <p>Kommer i nästa leverans.</p>
+            </section>
+
+            <section id="height" class="view">
+                <h2>Medelhöjd</h2>
+                <p>Kommer i nästa leverans.</p>
+            </section>
+
+            <section id="rojning" class="view">
+                <h2>Röjning</h2>
+                <p>Kommer i nästa leverans.</p>
+            </section>
+
+            <section id="quote" class="view">
+                <h2>Offert</h2>
+                <p>Kommer i nästa leverans.</p>
+            </section>
+
+        </main>
+
+    </div>
+
+    <footer>
+        Skogskalkyl 2.0 – Fältverktyg för skogsvårdsentreprenörer
+    </footer>
+
+    <!-- JS -->
+    <script type="module" src="js/app.js"></script>
+
+</body>
+</html>
